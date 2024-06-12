@@ -28,6 +28,8 @@ var dust = require('dustjs-linkedin');
 var dustHelpers = require('dustjs-helpers');
 var cons = require('consolidate');
 
+const password_token = 'super-secret-f8ed84e8f41e4146403dd4a6bbcea5e418d23a9';
+
 var app = express();
 var routes = require('./routes');
 
