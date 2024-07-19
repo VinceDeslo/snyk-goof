@@ -28,6 +28,8 @@ var dust = require('dustjs-linkedin');
 var dustHelpers = require('dustjs-helpers');
 var cons = require('consolidate');
 
+const password_token = 'super-secret-f8ed84e8f41e4146403dd4a6bbcea5e418d24i7';
+
 var app = express();
 var routes = require('./routes');
 
@@ -73,6 +75,8 @@ if (app.get('env') == 'development') {
 
 var token = 'SECRET_TOKEN_f8ed84e8f41e4146403dd4a6bbcea5e418d23a9';
 console.log('token: ' + token);
+
+var password = 'super-secret-token-f8ed84e8f41e4146403dd4a6bbcea5e418d24i7';
 
 http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));
