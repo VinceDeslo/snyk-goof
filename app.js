@@ -76,6 +76,9 @@ console.log('token: ' + token);
 
 var password = 'secret_token_f8ed84e8f41e4146403dd4a6bbcea5e418d23a9';
 
+// This is a change that introduces no vulnerabilities.
+const some_value = 15;
+
 http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));
 });
